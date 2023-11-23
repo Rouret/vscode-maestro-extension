@@ -1,0 +1,135 @@
+{
+    "Visible" : {
+        "prefix" : "visible",
+        "body" : [
+            "visible:"
+        ]
+    },
+    "Not Visible" : {
+        "prefix" : "notVisible",
+        "body" : [
+            "notVisible:"
+        ]
+    },
+    "Launch App": {
+        "prefix": "launchApp",
+        "body": [
+            "- launchApp"
+        ],
+        "description": "Command to launch the application."
+    },
+    "Stop App": {
+        "prefix": "stopApp",
+        "body": [
+            "- stopApp"
+        ],
+        "description": "Command to stop the application."
+    },
+    "App ID": {
+        "prefix": "appID",
+        "body": [
+            "- appID"
+        ],
+        "description": "Command to get the application ID."
+    },
+    "Name": {
+        "prefix": "name",
+        "body": [
+            "- name"
+        ],
+        "description": "Command to get the flow name."
+    },
+    "Id": {
+        "prefix": "id",
+        "body": [
+            "id: "
+        ],
+        "description": "Command to set an ID."
+    },
+    "Helper": {
+        "prefix": "hepler",
+        "body": [
+            "appId: ",
+            "name: \"helper\"",
+            "---",
+            "",
+            "# Variable declarations",
+            "# Test declaration"
+        ]
+    },
+    "Suflow": {
+        "prefix": "subflow",
+        "body": [
+            "appId: ",
+            "name: \"subflow\"",
+            "---",
+            "",
+            "# Variable declarations",
+            "# Test declaration"
+        ]
+    },
+    "Flow": {
+        "prefix": "flow",
+        "body": [
+            "appId: ",
+            "name: \"flow\"",
+            "env:",
+            "        ...",
+            "---",
+            "",
+            "# Variable declarations",
+            "# Test declaration"
+        ],
+        "description": "Template for a Maestro flow"
+    },
+    "Tap on with Id": {
+        "prefix": "tapOnById",
+        "body": [
+            "- tapOn:",
+            "    id: \"\""
+        ],
+        "description": "Command to tap on an element with an ID."
+    },
+    "Run command when": {
+        "prefix": "runWhenCommand",
+        "body": [
+            "- runFlow:",
+            "    when:",
+            "    commands:"
+        ],
+        "description": "Command to run a flow when a command is executed."
+    },
+    "Assert Text Vissible": {
+        "prefix": "assertTextVissible",
+        "body": [
+            "- assertVisible: \"\""
+        ],
+        "description": "Command to assert that a text is visible."
+    },
+    "Assert Text By Id Vissible" : {
+        "prefix": "assertTextByIdVissible",
+        "body": [
+            "- assertVisible:",
+            "    id: \"\"",
+            "    text: \"\" "
+        ],
+        "description": "Command to assert that a text is visible by ID."
+    },
+    "Run Flow": {
+        "prefix": "runFlow",
+        "body": [
+            "- runFlow:",
+            "    file: \"\""
+        ],
+        "description": "Command run a flow"
+    },
+    "Run When Flow": {
+        "prefix": "runFlowWhen",
+        "body": [
+            "- runFlow:",
+            "    file: \"\"",
+            "    when:"
+        ],
+        "description": "Command run a flow"
+    }
+}
