@@ -1,0 +1,11 @@
+{
+    "name": "vscode-maestro-extension",
+    "version": "0.1.0",
+    "engines": {
+        "node": "*"
+    },
+    "dependencies": {
+        "vscode-languageserver": "^9.0.1",
+        "vscode-languageserver-textdocument": "^1.0.1"
+    }
+}
