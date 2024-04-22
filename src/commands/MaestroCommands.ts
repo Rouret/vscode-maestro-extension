@@ -1,5 +1,5 @@
 export enum MaestroCommands {
-    openFile = "maestro.openFile",
-    openFolder = "maestro.openFolder",
-    launchFlow = "maestro.launchFlow"
-};
+  openFile = "maestro.openFile",
+  openFolder = "maestro.openFolder",
+  launchFlow = "maestro.launchFlow",
+}

@@ -1,5 +1,3 @@
-import * as vscode from 'vscode';
-
-export function openFolder(folderPath: string) {
-    // Nothing
-}
+export const openFolder = (folderPath: string) => {
+  // Nothing
+};
