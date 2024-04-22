@@ -2,8 +2,7 @@
   "name": "vscode-maestro-extension",
   "displayName": "The maestro extension",
   "description": "Maestro extension for vscode",
-  "author": "ROURET Lucas",
-  "publisher": "Rouret Lucas",
+  "author": "Rouret Lucas",
   "version": "0.1.0",
   "icon": "resources/icon.png",
   "repository": {
@@ -36,7 +35,7 @@
         {
           "id": "maestro-explorer",
           "title": "Maestro Explorer",
-          "icon": "media/dep.svg"
+          "icon": "resources/icon.png"
         }
       ]
     },
@@ -53,7 +52,7 @@
     "commands": [
       {
         "command": "maestro.launchFlow",
-        "title": "Launch flow",
+        "title": "Maestro: Launch flow",
         "icon": {
           "light": "resources/icons/light/play.svg",
           "dark": "resources/icons/dark/play.svg"
@@ -76,16 +75,16 @@
     "generate": "vsce package"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.8",
-    "@types/mocha": "^10.0.2",
-    "@types/node": "18.x",
-    "@types/vscode": "^1.67.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "@vscode/test-electron": "^2.3.4",
-    "eslint": "^8.50.0",
-    "glob": "^10.3.3",
-    "mocha": "^10.2.0",
-    "typescript": "^5.2.2"
+    "@types/js-yaml": "^4.0.9",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "~18.19.31",
+    "@types/vscode": "^1.88.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "glob": "^10.3.12",
+    "mocha": "^10.4.0",
+    "typescript": "^5.4.5"
   }
 }
