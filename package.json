@@ -4,13 +4,14 @@
   "description": "Maestro extension for vscode",
   "author": "Rouret Lucas",
   "version": "0.1.0",
+  "publisher": "rouret-lucas",
   "icon": "resources/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/rouret/vscode-maestro-extension"
   },
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.88.0"
   },
   "categories": [
     "Other",
@@ -35,7 +36,7 @@
         {
           "id": "maestro-explorer",
           "title": "Maestro Explorer",
-          "icon": "resources/icon.png"
+          "icon": "resources/icon.svg"
         }
       ]
     },
