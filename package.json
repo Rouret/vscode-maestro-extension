@@ -3,7 +3,7 @@
   "displayName": "The maestro extension",
   "description": "Maestro extension for vscode",
   "author": "Rouret Lucas",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "rouret-lucas",
   "icon": "resources/icon.png",
   "repository": {
