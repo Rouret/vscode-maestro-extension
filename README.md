@@ -12,6 +12,19 @@ Maestro simplifies testing your applications; vscode-maestro-extension simplifie
 - [Snippets](#snippets)
 - [Changelog](./CHANGELOG.md)
 
+# How to use it ?
+
+## Maestro Explorer
+
+Firstly, create a 'maestro' or '.maestro' folder. The maestro-extension will detect it and set it as the root folder for the Tree View.
+
+After this, you will be able to see all your YAML files and run them.
+![Tree View preview](treeview-preview.png)
+
+## Snippets
+
+[Snippets table](#snippets)
+
 ## Features
 
 - **TreeView**, you can see folders and Maestro files. However, other types of files are not displayed; please use the default explorer for those.

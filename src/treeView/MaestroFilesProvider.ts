@@ -5,6 +5,9 @@ import {
   ItemTreeType,
   getFolderTreeFromParentPath,
 } from "./FileSystemTreeBuilder";
+import * as fs from "fs";
+
+const MAESTRO_ROOT_FOLDER_NAME = ["maestro", ".maestro"];
 
 type ItemTreeChangeEvent = ItemTree | undefined | null | void;
 
@@ -41,9 +44,20 @@ export class MaestroFilesProvider implements vscode.TreeDataProvider<ItemTree> {
 
   private resolveParentPath(element?: ItemTree): string {
     if (element && element.type === ItemTreeType.folder) {
-      return element.path; // Make sure that `path` is a property of `FolderTree`
+      return element.path;
     }
-    return path.join(this.workspaceRoot, "maestro"); // Default to the root 'maestro' folder
+
+    let maestroRootFolder = "";
+
+    for (const folderName of MAESTRO_ROOT_FOLDER_NAME) {
+      const folderPath = path.join(this.workspaceRoot, folderName);
+      if (fs.existsSync(folderPath)) {
+        maestroRootFolder = folderName;
+        break;
+      }
+    }
+
+    return path.join(this.workspaceRoot, maestroRootFolder);
   }
 
   private loadChildren(parentPath: string): Thenable<ItemTree[]> {
