@@ -18,6 +18,7 @@
     "Snippets"
   ],
   "activationEvents": [
+    "onStartupFinished",
     "onLanguage:yaml"
   ],
   "main": "./out/extension.js",
@@ -28,6 +29,13 @@
           "command": "maestro.launchFlow",
           "when": "view == maestroExplorer && viewItem == yamlFile",
           "group": "inline"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "maestro.refreshMaestroTreeView",
+          "when": "view == maestroExplorer",
+          "group": "navigation"
         }
       ]
     },
@@ -57,6 +65,14 @@
         "icon": {
           "light": "resources/icons/light/play.svg",
           "dark": "resources/icons/dark/play.svg"
+        }
+      },
+      {
+        "command": "maestro.refreshMaestroTreeView",
+        "title": "Refresh MAestro Tree View",
+        "icon": {
+          "light": "resources/icons/light/refresh.svg",
+          "dark": "resources/icons/dark/refresh.svg"
         }
       }
     ],
