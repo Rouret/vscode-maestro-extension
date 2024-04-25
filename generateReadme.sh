@@ -4,7 +4,7 @@
 jsonFile="./config/maestro.code-snippets.json"
 
 # Définissez le chemin d'accès au fichier README.md
-readmeFile="README.md"
+readmeFile="OUTPUT.md"
 
 # Vérifiez si jq est installé
 if ! command -v jq &> /dev/null
@@ -16,7 +16,7 @@ fi
 # Commencer un nouveau README.md avec le titre
 
 # Get the content of the file BASE_README.md
-cat BASE_README.md > "$readmeFile"
+> "$readmeFile"
 
 # Ajouter le tableau en markdown au README.md
 {
